@@ -10,8 +10,8 @@
           margin-left: 40px;
      }
 
-     @include abstracts.breakpoint (lg) {
-          gap: 10px;
+     @include abstracts.breakpoint (md) {
+          margin-left: 0;
      }
      
      &__title {
