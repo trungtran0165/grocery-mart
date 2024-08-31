@@ -1,3 +1,4 @@
+@use "../abstracts";
 *,
 ::before,
 ::after {
@@ -24,6 +25,8 @@ button {
     border: none;
     outline: none;
     background: transparent;
+    padding: 0;
+    cursor: pointer;
 }
 
 a, button, input, textarea, select, img {
@@ -49,4 +52,11 @@ a, button, input, textarea, select, img {
 ::-webkit-scrollbar-track {
     border-radius: 0;
     background-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+    @include abstracts.screen(sm) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
 }

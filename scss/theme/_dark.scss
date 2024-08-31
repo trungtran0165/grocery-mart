@@ -21,7 +21,7 @@ html.dark {
     --dropdown-arrow-color: brightness(0) saturate(100%) invert(22%) sepia(21%) saturate(428%) hue-rotate(186deg)
         brightness(89%) contrast(101%);
     --top-menu-border-color: #171c28;
-    --menu-ccolumn-icon-color: brightness(0) saturate(100%) invert(91%) sepia(3%) saturate(138%) hue-rotate(200deg)
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(91%) sepia(3%) saturate(138%) hue-rotate(200deg)
         brightness(107%) contrast(98%);
 
     // Side bar
@@ -32,4 +32,12 @@ html.dark {
     --cate-item-bg: #171c28;
     --cate-item-thumb-bg: #292e39;
     --cate-item-title-color: #fff;
+
+    // Buttons
+    --filter-btn-color: #fff;
+    --filter-btn-bg: #171c28;
+
+    // Product card
+    --product-card-bg: #171c28;
+    --product-card-shadow: rgba(0, 0, 0, 0.20);
 }
