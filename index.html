@@ -1,33 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Grocery Mart</title>
         <!-- Favicon -->
-        <link
-            rel="apple-touch-icon"
-            sizes="76x76"
-            href="./assets/favicon/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./assets/favicon/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./assets/favicon/favicon-16x16.png"
-        />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
         <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-        <link
-            rel="mask-icon"
-            href="./assets/favicon/safari-pinned-tab.svg"
-            color="#5bbad5"
-        />
+        <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
 
@@ -44,24 +26,70 @@
         <script>
             load("#header", "./templates/header.html");
         </script>
-        <div class="container">
+        <div class="container home">
             <!-- Slideshow -->
-             <div class="slideshow">
-                <div class="slideshow__inner">
-                    <div class="slideshow__item">
-                        <picture>
-                            <source media="(max-width: 767.98px)" srcset="./assets/img/slideshow/item-1-md.png" />
-                            <img src="./assets/img/slideshow/item1.png" alt="" class="slideshow__img">
-                        </picture>
+            <section class="home__container">
+                <div class="slideshow">
+                    <div class="slideshow__inner">
+                        <div class="slideshow__item">
+                            <picture>
+                                <source media="(max-width: 767.98px)" srcset="./assets/img/slideshow/item-1-md.png" />
+                                <img src="./assets/img/slideshow/item1.png" alt="" class="slideshow__img" />
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="slideshow__page">
+                        <span class="slideshow__num">1</span>
+                        <span class="slideshow__slider"></span>
+                        <span class="slideshow__num">5</span>
                     </div>
                 </div>
+            </section>
 
-                <div class="slideshow__page">
-                    <span class="slideshow__num">1</span>
-                    <span class="slideshow__slider"></span>
-                    <span class="slideshow__num">5</span>
+            <!-- Browse Categories -->
+            <section class="home__container">
+                <h2 class="home__heading">Browse Categories</h2>
+                <div class="home__cate row row-cols-3 row-cols-md-1">
+                    <!-- Category item 1 -->
+                    <div class="col">
+                        <article class="cate-item">
+                            <img src="./assets/img/category-item/item-1.png" alt="" class="cate-item__thumb">
+                            <section class="cate-item__info">
+                                <h3 class="cate-item__title">$24 - $150</h3>
+                                <p class="cate-item__desc">New sumatra mandeling coffe blend</p>
+                            </section>
+                        </article>
+                    </div>
+
+                    <!-- Category item 2 -->
+                    <div class="col">
+                        <article class="cate-item">
+                            <img src="./assets/img/category-item/item-2.png" alt="" class="cate-item__thumb">
+                            <section class="cate-item__info">
+                                <h3 class="cate-item__title">$37 - $160</h3>
+                                <p class="cate-item__desc">Espresso arabica and robusta beans</p>
+                            </section>
+                        </article>
+                    </div>
+
+                    <!-- Category item 3 -->
+                    <div class="col">
+                        <article class="cate-item">
+                            <img src="./assets/img/category-item/item-3.png" alt="" class="cate-item__thumb">
+                            <section class="cate-item__info">
+                                <h3 class="cate-item__title">$32 - $160</h3>
+                                <p class="cate-item__desc">Lavazza top class whole bean coffee blend</p>
+                            </section>
+                        </article>
+                    </div>
                 </div>
-             </div>
+            </section>
+
+            <!-- Browse Product -->
+            <section class="home__container">
+
+            </section>
 
             <!-- Footer -->
             <footer id="footer">Footer</footer>
