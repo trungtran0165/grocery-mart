@@ -12,6 +12,10 @@ $error-color: #ff4d4f;
     &__group {
         margin-top: 30px;
 
+        @include abstracts.screen(md) {
+        margin-top: 20px;
+        }
+
         &--inline {
             display: flex;
             align-items: center;
@@ -64,7 +68,7 @@ $error-color: #ff4d4f;
         }
 
         &::placeholder {
-            color: #9e9da8;
+            color: var(--form-placeholder-color);
         }
 
         @include abstracts.screen(md) {

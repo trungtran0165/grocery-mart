@@ -3,7 +3,7 @@
 .auth {
     display: flex;
     min-height: 100vh;
-    
+
     @supports (-webkit-touch-callout: none) {
         min-height: -webkit-fill-available;
     }
@@ -21,6 +21,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 50px;
+        background: var(--auth-intro-bg);
 
         &-logo {
             position: absolute;
@@ -46,6 +47,7 @@
             font-size: 1.8rem;
             font-weight: 500;
             line-height: 1.45; /* 144.444% */
+            color: var(--auth-intro-text-color);
 
             @include abstracts.screen(md) {
                 font-size: 1.5rem;
@@ -75,6 +77,10 @@
             text-align: center;
             width: min(460px, 100%);
             margin: 0 auto;
+
+            @include abstracts.screen(md) {
+                padding: 32px 0px;
+            }
         }
     }
 
@@ -85,14 +91,15 @@
         line-height: 1.46;
 
         @include abstracts.screen(md) {
+            margin-top: 40px;
             font-size: 2.2rem;
         }
     }
 
     &__desc {
         margin-top: 10px;
-        padding: 0 30px;
-        color: #9E9DA8;
+        padding: 0 20px;
+        color: #9e9da8;
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 1.47;
@@ -112,14 +119,14 @@
     }
 
     &__link {
-        color: #0071DC;
+        color: #0071dc;
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 1.47;
 
         @include abstracts.screen(md) {
             font-size: 1.4rem;
-        } 
+        }
     }
 
     &__btn-group {
@@ -127,20 +134,25 @@
         flex-direction: column;
         gap: 30px;
         margin-top: 50px;
+
+        @include abstracts.screen(md) {
+            margin-top: 40px;
+            gap: 20px;
+        }
     }
 
     &__btn {
         width: 100%;
-
     }
 
     &__text {
         margin-top: 108px;
         font-size: 1.8rem;
-        color: #9E9DA8;
+        color: #9e9da8;
         line-height: 1.45;
 
         @include abstracts.screen(md) {
+            margin-top: 40px;
             font-size: 1.6rem;
         }
 
