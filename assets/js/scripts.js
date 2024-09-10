@@ -188,3 +188,5 @@ window.addEventListener("template-loaded", () => {
         };
     });
 });
+
+console.log("Hello")
